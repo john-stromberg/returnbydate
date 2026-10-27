@@ -1,0 +1,967 @@
+{
+  "checked": "2026-10-26",
+  "retailers": [
+    {
+      "id": "walmart",
+      "slug": "walmart",
+      "name": "Walmart",
+      "nrf_rank": 1,
+      "category": "Supercenter",
+      "homepage": "https://www.walmart.com",
+      "window_days": 90,
+      "window_note": "Electronics 30 days, most phones 14",
+      "price_match": "own",
+      "price_match_note": "Stores match Walmart.com price. No competitor matching.",
+      "holiday": {
+        "status": "confirmed",
+        "start": "2026-10-01",
+        "end": "2026-12-31",
+        "by": "2027-01-31",
+        "note": "Bought Oct 1\u2013Dec 31, 2026 \u2192 return by Jan 31, 2027. Phones, major appliances and protection plans excluded."
+      },
+      "verified": "retailer",
+      "source": "https://www.wbiw.com/2026/10/19/walmart-extends-holiday-return-window-as-updated-policy-takes-effect-nationwide/",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "amazon",
+      "slug": "amazon",
+      "name": "Amazon",
+      "nrf_rank": 2,
+      "category": "Online marketplace",
+      "homepage": "https://www.amazon.com",
+      "window_days": 30,
+      "window_note": "Apple products 15 days; third-party sellers vary",
+      "price_match": "none",
+      "price_match_note": "No price-match policy.",
+      "holiday": {
+        "status": "confirmed",
+        "start": "2026-11-01",
+        "end": "2026-12-31",
+        "by": "2027-01-31",
+        "note": "Bought Nov 1\u2013Dec 31, 2026 \u2192 return by Jan 31, 2027 (Apple: Jan 15, 2027). Amazon says this now repeats every year."
+      },
+      "verified": "retailer",
+      "source": "https://ppc.land/amazon-makes-its-january-31-holiday-return-deadline-an-annual-rule/",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "costco",
+      "slug": "costco",
+      "name": "Costco",
+      "nrf_rank": 3,
+      "category": "Warehouse club",
+      "homepage": "https://www.costco.com",
+      "window_days": null,
+      "window_note": "TVs, computers, phones, major appliances 90 days",
+      "price_match": "own",
+      "price_match_note": "Refunds the difference if Costco's own price drops within 30 days.",
+      "holiday": {
+        "status": "none",
+        "note": "No extension; standard window already covers gifts."
+      },
+      "verified": "retailer",
+      "source": "https://manifestme.me/blog/return-policy-cheat-sheet",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "samsclub",
+      "slug": "sams-club",
+      "name": "Sam's Club",
+      "nrf_rank": "1*",
+      "category": "Warehouse club",
+      "homepage": "https://www.samsclub.com",
+      "window_days": null,
+      "window_note": "Electronics and major appliances 90 days, phones 14",
+      "price_match": "none",
+      "price_match_note": "No competitor matching; club-level adjustments at manager's discretion.",
+      "holiday": {
+        "status": "none",
+        "note": "No extension; standard window already covers gifts."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "homedepot",
+      "slug": "home-depot",
+      "name": "The Home Depot",
+      "nrf_rank": 5,
+      "category": "Home improvement",
+      "homepage": "https://www.homedepot.com",
+      "window_days": 90,
+      "window_note": "365 days with store card; electronics 30; major appliances 48 hours",
+      "price_match": "comp",
+      "price_match_note": "Matches identical in-stock items from local and online competitors.",
+      "holiday": {
+        "status": "none",
+        "note": "No holiday extension announced."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "cvs",
+      "slug": "cvs",
+      "name": "CVS",
+      "nrf_rank": 6,
+      "category": "Drugstore",
+      "homepage": "https://www.cvs.com",
+      "window_days": 60,
+      "window_note": "New, unopened items; no prescriptions",
+      "price_match": "none",
+      "price_match_note": "No price matching or adjustments.",
+      "holiday": {
+        "status": "none",
+        "note": "No holiday extension."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "walgreens",
+      "slug": "walgreens",
+      "name": "Walgreens",
+      "nrf_rank": 7,
+      "category": "Drugstore",
+      "homepage": "https://www.walgreens.com",
+      "window_days": 30,
+      "window_note": "No-receipt returns as exchange or gift card",
+      "price_match": "own",
+      "price_match_note": "Stores may match Walgreens.com price. No competitor matching.",
+      "holiday": {
+        "status": "none",
+        "note": "No holiday extension."
+      },
+      "verified": "secondary",
+      "source": "https://shopsavvy.com/retailers/walgreens",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "target",
+      "slug": "target",
+      "name": "Target",
+      "nrf_rank": 8,
+      "category": "Mass merchant",
+      "homepage": "https://www.target.com",
+      "window_days": 90,
+      "window_note": "Own brands 365; electronics 30; Apple and Beats 14; +30 days with Circle Card or 360",
+      "price_match": "own",
+      "price_match_note": "Matches Target.com, store and Circle deal prices within 14 days. Competitor matching ended July 2025.",
+      "holiday": {
+        "status": "expected",
+        "note": "Last season: electronics bought Nov 1\u2013Dec 24 returnable to Jan 24; Apple, Beats and phones to about Jan 8. 2026 dates not posted yet."
+      },
+      "verified": "retailer",
+      "source": "https://manifestme.me/blog/return-policy-cheat-sheet",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "lowes",
+      "slug": "lowes",
+      "name": "Lowe's",
+      "nrf_rank": 9,
+      "category": "Home improvement",
+      "homepage": "https://www.lowes.com",
+      "window_days": 90,
+      "window_note": "365 with Lowe's card; electronics 30; major appliances 48 hours",
+      "price_match": "comp",
+      "price_match_note": "Matches identical in-stock items from qualifying competitors. Amazon and warehouse clubs excluded.",
+      "holiday": {
+        "status": "none",
+        "note": "No holiday extension announced. Holiday decor must come back before the holiday."
+      },
+      "verified": "secondary",
+      "source": "https://shopsavvy.com/retailers/lowes",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "apple",
+      "slug": "apple",
+      "name": "Apple",
+      "nrf_rank": 11,
+      "category": "Electronics brand",
+      "homepage": "https://www.apple.com",
+      "window_days": 14,
+      "window_note": "Receipt required; opened software not returnable",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "expected",
+        "note": "Last season: received Nov 12\u2013Dec 25 \u2192 return by Jan 8. Usually announced mid-November."
+      },
+      "verified": "secondary",
+      "source": "https://manifestme.me/blog/return-policy-cheat-sheet",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "tjx",
+      "slug": "tj-maxx-marshalls-homegoods",
+      "name": "T.J. Maxx, Marshalls, HomeGoods",
+      "nrf_rank": 15,
+      "category": "Off-price",
+      "homepage": "https://tjmaxx.tjx.com",
+      "window_days": 30,
+      "window_note": "Return to the same banner you bought from",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "expected",
+        "note": "Last season: in-store purchases Oct 5\u2013Dec 24 returnable to Jan 25; online to Feb 4."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "dollargeneral",
+      "slug": "dollar-general",
+      "name": "Dollar General",
+      "nrf_rank": 17,
+      "category": "Dollar store",
+      "homepage": "https://www.dollargeneral.com",
+      "window_days": 30,
+      "window_note": "Online orders from delivery date",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "none",
+        "note": "No published extension."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "bestbuy",
+      "slug": "best-buy",
+      "name": "Best Buy",
+      "nrf_rank": 18,
+      "category": "Electronics",
+      "homepage": "https://www.bestbuy.com",
+      "window_days": 15,
+      "window_note": "60 days for My Best Buy Plus/Total; phones and activatable devices 14 days plus $45 fee once opened",
+      "price_match": "comp",
+      "price_match_note": "Matches qualified competitors on identical new items, plus its own price drops during the return window.",
+      "holiday": {
+        "status": "expected",
+        "note": "Reported for 2026: bought Oct 31\u2013Dec 31 \u2192 return by Jan 15, 2027, with a matching Holiday Price Match Guarantee. Not yet on bestbuy.com."
+      },
+      "verified": "secondary",
+      "source": "https://manifestme.me/blog/return-policy-cheat-sheet",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "ace",
+      "slug": "ace-hardware",
+      "name": "Ace Hardware",
+      "nrf_rank": 19,
+      "category": "Hardware co-op",
+      "homepage": "https://www.acehardware.com",
+      "window_days": 30,
+      "window_note": "Applies to acehardware.com; each store sets its own in-store policy",
+      "price_match": "none",
+      "price_match_note": "No chain-wide guarantee. Some independently owned stores match.",
+      "holiday": {
+        "status": "none",
+        "note": "No holiday extension."
+      },
+      "verified": "retailer",
+      "source": "https://www.acehardware.com/customer-service-center/returns",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "meijer",
+      "slug": "meijer",
+      "name": "Meijer",
+      "nrf_rank": 21,
+      "category": "Supercenter",
+      "homepage": "https://www.meijer.com",
+      "window_days": 90,
+      "window_note": "Electronics 30 days",
+      "price_match": "own",
+      "price_match_note": "Refunds the difference if its weekly-ad price drops within about 10 days. No competitor matching.",
+      "holiday": {
+        "status": "none",
+        "note": "No published extension."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "ross",
+      "slug": "ross-dress-for-less",
+      "name": "Ross Dress for Less",
+      "nrf_rank": 22,
+      "category": "Off-price",
+      "homepage": "https://www.rossstores.com",
+      "window_days": 30,
+      "window_note": "Store credit after 30 days; stores only",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "none",
+        "note": "No published extension."
+      },
+      "verified": "retailer",
+      "source": "https://www.rossstores.com/?p=139",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "att",
+      "slug": "att",
+      "name": "AT&T",
+      "nrf_rank": 23,
+      "category": "Wireless carrier",
+      "homepage": "https://www.att.com",
+      "window_days": 14,
+      "window_note": "Up to $55 restocking fee on opened devices",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "none",
+        "note": "No extension published."
+      },
+      "verified": "retailer",
+      "source": "https://att.com/shop/en/wireless/returnpolicy.html",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "verizon",
+      "slug": "verizon",
+      "name": "Verizon",
+      "nrf_rank": 24,
+      "category": "Wireless carrier",
+      "homepage": "https://www.verizon.com",
+      "window_days": 30,
+      "window_note": "$50 restocking fee on devices (not in Hawaii)",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "none",
+        "note": "No extension published."
+      },
+      "verified": "retailer",
+      "source": "https://www.verizon.com/support/return-policy/",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "macys",
+      "slug": "macys",
+      "name": "Macy's",
+      "nrf_rank": 25,
+      "category": "Department store",
+      "homepage": "https://www.macys.com",
+      "window_days": 30,
+      "window_note": "Free in store; $9.99 by mail for non-members",
+      "price_match": "own",
+      "price_match_note": "Matches its own lower price within 10 days of the order.",
+      "holiday": {
+        "status": "confirmed",
+        "start": "2026-10-05",
+        "end": "2026-12-31",
+        "by": "2027-01-31",
+        "note": "Bought Oct 5\u2013Dec 31, 2026 \u2192 return by Jan 31, 2027. Dyson and Mac Duggal excluded."
+      },
+      "verified": "retailer",
+      "source": "https://www.macys.com/customer-service/articles/macys-holiday-2026-return-policy",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "bjs",
+      "slug": "bjs-wholesale-club",
+      "name": "BJ's Wholesale Club",
+      "nrf_rank": 26,
+      "category": "Warehouse club",
+      "homepage": "https://www.bjs.com",
+      "window_days": 365,
+      "window_note": "TVs, computers, tablets 90 days; mattresses 30",
+      "price_match": "comp",
+      "price_match_note": "TVs only, requested the day of purchase.",
+      "holiday": {
+        "status": "none",
+        "note": "No extension; standard window already covers gifts."
+      },
+      "verified": "retailer",
+      "source": "https://www.bjs.com/help/what-is-bj-s-wholesale-club-return-policy-/",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "dicks",
+      "slug": "dicks-sporting-goods",
+      "name": "Dick's Sporting Goods",
+      "nrf_rank": 27,
+      "category": "Sporting goods",
+      "homepage": "https://www.dickssportinggoods.com",
+      "window_days": 90,
+      "window_note": "Fitness equipment 30; sources differ (60 vs 90), confirm before buying",
+      "price_match": "comp",
+      "price_match_note": "Best Price Guarantee matches local and online retailers, including Amazon; 14-day price adjustment.",
+      "holiday": {
+        "status": "none",
+        "note": "No extension published."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "dollartree",
+      "slug": "dollar-tree",
+      "name": "Dollar Tree",
+      "nrf_rank": 29,
+      "category": "Dollar store",
+      "homepage": "https://www.dollartree.com",
+      "window_days": null,
+      "window_note": "Refund with receipt; exchange only without one",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "none",
+        "note": "No extension."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "oreilly",
+      "slug": "oreilly-auto-parts",
+      "name": "O'Reilly Auto Parts",
+      "nrf_rank": 30,
+      "category": "Auto parts",
+      "homepage": "https://www.oreillyauto.com",
+      "window_days": 90,
+      "window_note": "Uninstalled parts; sources differ, confirm before buying",
+      "price_match": "comp",
+      "price_match_note": "Low Price Guarantee matches local in-store competitors, not online sellers.",
+      "holiday": {
+        "status": "none",
+        "note": "No extension."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "autozone",
+      "slug": "autozone",
+      "name": "AutoZone",
+      "nrf_rank": 31,
+      "category": "Auto parts",
+      "homepage": "https://www.autozone.com",
+      "window_days": 90,
+      "window_note": "Unused, original packaging, receipt and ID",
+      "price_match": "comp",
+      "price_match_note": "Matches local auto-parts stores only, not websites.",
+      "holiday": {
+        "status": "none",
+        "note": "No extension; 90 days year-round."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "tractorsupply",
+      "slug": "tractor-supply",
+      "name": "Tractor Supply",
+      "nrf_rank": 32,
+      "category": "Farm & ranch",
+      "homepage": "https://www.tractorsupply.com",
+      "window_days": 30,
+      "window_note": "Live animals and some categories excluded",
+      "price_match": "comp",
+      "price_match_note": "Matches competitor in-store and online prices, including within 30 days after purchase.",
+      "holiday": {
+        "status": "none",
+        "note": "No extension."
+      },
+      "verified": "retailer",
+      "source": "https://www.tractorsupply.com/policies-information_customer-solutions_tsc-return-policy.html",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "nordstrom",
+      "slug": "nordstrom",
+      "name": "Nordstrom",
+      "nrf_rank": 33,
+      "category": "Department store",
+      "homepage": "https://www.nordstrom.com",
+      "window_days": null,
+      "window_note": "Handled case by case; Nordstrom Rack has a set window",
+      "price_match": "comp",
+      "price_match_note": "Price adjustment against Nordstrom and listed competitors within 14 days.",
+      "holiday": {
+        "status": "none",
+        "note": "Not needed; no fixed window."
+      },
+      "verified": "secondary",
+      "source": "https://shopsavvy.com/retailers/nordstrom",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "kohls",
+      "slug": "kohls",
+      "name": "Kohl's",
+      "nrf_rank": 34,
+      "category": "Department store",
+      "homepage": "https://www.kohls.com",
+      "window_days": 90,
+      "window_note": "120 with Kohl's Card; premium electronics, watches and mattresses 30",
+      "price_match": "own",
+      "price_match_note": "Matches Kohls.com prices. Competitor matching is limited.",
+      "holiday": {
+        "status": "confirmed",
+        "start": "2026-10-04",
+        "end": "2026-12-30",
+        "by": "2027-01-31",
+        "note": "Bought Oct 4\u2013Dec 30, 2026 \u2192 return by Jan 31, 2027. Sephora at Kohl's: Oct 30\u2013Dec 30."
+      },
+      "verified": "retailer",
+      "source": "https://www.kohls.com/faq/article/893",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "menards",
+      "slug": "menards",
+      "name": "Menards",
+      "nrf_rank": 36,
+      "category": "Home improvement",
+      "homepage": "https://www.menards.com",
+      "window_days": 90,
+      "window_note": "Special orders may carry a restocking fee",
+      "price_match": "own",
+      "price_match_note": "Honors its own sale price within 14 days via price-adjustment rebate.",
+      "holiday": {
+        "status": "none",
+        "note": "No extension."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "gap",
+      "slug": "gap-old-navy",
+      "name": "Gap, Old Navy, Banana Republic",
+      "nrf_rank": 37,
+      "category": "Apparel",
+      "homepage": "https://www.gap.com",
+      "window_days": 30,
+      "window_note": "Old Navy may allow longer; check receipt",
+      "price_match": "own",
+      "price_match_note": "One-time adjustment if its own price drops within 14 days.",
+      "holiday": {
+        "status": "expected",
+        "note": "Past seasons: mid-October to Dec 24 purchases returnable to mid-January."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "chewy",
+      "slug": "chewy",
+      "name": "Chewy",
+      "nrf_rank": 40,
+      "category": "Pet supplies",
+      "homepage": "https://www.chewy.com",
+      "window_days": 365,
+      "window_note": "Free return shipping; opened food accepted",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "none",
+        "note": "Not needed; 365-day window."
+      },
+      "verified": "retailer",
+      "source": "https://www.chewy.com/app/content/return-policy",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "ulta",
+      "slug": "ulta",
+      "name": "Ulta Beauty",
+      "nrf_rank": 41,
+      "category": "Beauty",
+      "homepage": "https://www.ulta.com",
+      "window_days": 60,
+      "window_note": "Refund within 30 days, store credit days 31\u201360",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "expected",
+        "note": "Last season holiday purchases were returnable through Jan 31."
+      },
+      "verified": "secondary",
+      "source": "https://shopsavvy.com/retailers/ulta",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "familydollar",
+      "slug": "family-dollar",
+      "name": "Family Dollar",
+      "nrf_rank": 43,
+      "category": "Dollar store",
+      "homepage": "https://www.familydollar.com",
+      "window_days": 30,
+      "window_note": "Receipt required for refund",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "none",
+        "note": "No published extension."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "burlington",
+      "slug": "burlington",
+      "name": "Burlington",
+      "nrf_rank": 45,
+      "category": "Off-price",
+      "homepage": "https://www.burlington.com",
+      "window_days": 30,
+      "window_note": "Store credit days 31\u201360",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "expected",
+        "note": "Usually extends for mid-October to early-December purchases into early January. 2026 dates not posted."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "wayfair",
+      "slug": "wayfair",
+      "name": "Wayfair",
+      "nrf_rank": 46,
+      "category": "Home furnishings",
+      "homepage": "https://www.wayfair.com",
+      "window_days": 30,
+      "window_note": "From delivery; return shipping deducted; large appliances 48 hours",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "none",
+        "note": "Wayfair Rewards members get free return shipping through Dec 31, 2026."
+      },
+      "verified": "secondary",
+      "source": "https://manifestme.me/blog/return-policy-cheat-sheet",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "saks",
+      "slug": "saks",
+      "name": "Saks Fifth Avenue",
+      "nrf_rank": 51,
+      "category": "Luxury department store",
+      "homepage": "https://www.saksfifthavenue.com",
+      "window_days": 30,
+      "window_note": "$9.95 fee on mailed returns",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "expected",
+        "note": "Last season: bought Nov 15\u2013Dec 15 \u2192 return by Jan 15."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "sephora",
+      "slug": "sephora",
+      "name": "Sephora",
+      "nrf_rank": 52,
+      "category": "Beauty",
+      "homepage": "https://www.sephora.com",
+      "window_days": 30,
+      "window_note": "Store credit days 31\u201360",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "expected",
+        "note": "Last season: bought Oct 31\u2013Dec 30 \u2192 exchange or credit through Jan 30."
+      },
+      "verified": "retailer",
+      "source": "https://www.sephora.com/ca/en/beauty/returns-exchanges",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "harborfreight",
+      "slug": "harbor-freight",
+      "name": "Harbor Freight",
+      "nrf_rank": 54,
+      "category": "Tools",
+      "homepage": "https://www.harborfreight.com",
+      "window_days": 90,
+      "window_note": "Generators and compressors may differ; receipt and ID",
+      "price_match": "comp",
+      "price_match_note": "Lowest Price Guarantee; price adjustments reported within 30 days.",
+      "holiday": {
+        "status": "none",
+        "note": "No extension; 90 days year-round."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "petsmart",
+      "slug": "petsmart",
+      "name": "PetSmart",
+      "nrf_rank": 56,
+      "category": "Pet supplies",
+      "homepage": "https://www.petsmart.com",
+      "window_days": 60,
+      "window_note": "Receipt or order number",
+      "price_match": "comp",
+      "price_match_note": "Price Match Promise on identical in-stock items from select competitors.",
+      "holiday": {
+        "status": "none",
+        "note": "No published extension."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "basspro",
+      "slug": "bass-pro-shops-cabelas",
+      "name": "Bass Pro Shops & Cabela's",
+      "nrf_rank": 58,
+      "category": "Outdoor",
+      "homepage": "https://www.basspro.com",
+      "window_days": 60,
+      "window_note": "Electronics 30; returns accepted at either brand",
+      "price_match": "comp",
+      "price_match_note": "Matches competitors within 100 miles and qualifying websites.",
+      "holiday": {
+        "status": "none",
+        "note": "No published extension."
+      },
+      "verified": "retailer",
+      "source": "https://help.basspro.com/returns-8ddb71e5/what-is-your-return-policy-aed39f03",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "williamssonoma",
+      "slug": "williams-sonoma",
+      "name": "Williams-Sonoma",
+      "nrf_rank": 59,
+      "category": "Home & kitchen",
+      "homepage": "https://www.williams-sonoma.com",
+      "window_days": 30,
+      "window_note": "Receipt or gift receipt; no monogrammed or special orders",
+      "price_match": "none",
+      "price_match_note": "No published price-match policy.",
+      "holiday": {
+        "status": "none",
+        "note": "No published extension."
+      },
+      "verified": "retailer",
+      "source": "https://www.williams-sonoma.com/shop/cookware/staub-white",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "hobbylobby",
+      "slug": "hobby-lobby",
+      "name": "Hobby Lobby",
+      "nrf_rank": 62,
+      "category": "Arts & crafts",
+      "homepage": "https://www.hobbylobby.com",
+      "window_days": 90,
+      "window_note": "Unused; store credit without receipt",
+      "price_match": "comp",
+      "price_match_note": "Matches identical items in Michaels or Joann ads, in store only.",
+      "holiday": {
+        "status": "none",
+        "note": "No extension; 90 days year-round."
+      },
+      "verified": "retailer",
+      "source": "https://www.hobbylobby.com/returns",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "qvc",
+      "slug": "qvc",
+      "name": "QVC",
+      "nrf_rank": 63,
+      "category": "TV & online",
+      "homepage": "https://www.qvc.com",
+      "window_days": 30,
+      "window_note": "From delivery; return shipping usually paid by you",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "expected",
+        "note": "Usually runs a holiday return period starting in the fall. 2026 dates not posted."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "bbw",
+      "slug": "bath-and-body-works",
+      "name": "Bath & Body Works",
+      "nrf_rank": 65,
+      "category": "Beauty & home fragrance",
+      "homepage": "https://www.bathandbodyworks.com",
+      "window_days": 90,
+      "window_note": "Store credit after 90 days",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "none",
+        "note": "Not needed; 90-day window."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "dell",
+      "slug": "dell",
+      "name": "Dell",
+      "nrf_rank": 66,
+      "category": "Computers",
+      "homepage": "https://www.dell.com",
+      "window_days": 30,
+      "window_note": "Up to 15% restocking fee on non-defective returns",
+      "price_match": "comp",
+      "price_match_note": "Matches qualifying retailer sites within 30 days (PCs capped at 10%), plus its own price drops.",
+      "holiday": {
+        "status": "expected",
+        "note": "Usually extends returns and price guarantees for November\u2013December buys into mid-January."
+      },
+      "verified": "retailer",
+      "source": "https://www.dell.com/en-us/lp/price-match-guarantee",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "jdsports",
+      "slug": "jd-sports",
+      "name": "JD Sports",
+      "nrf_rank": 70,
+      "category": "Sneakers & apparel",
+      "homepage": "https://www.jdsports.com",
+      "window_days": 45,
+      "window_note": "Mail returns may carry a fee",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "none",
+        "note": "No published extension."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "lululemon",
+      "slug": "lululemon",
+      "name": "lululemon",
+      "nrf_rank": 71,
+      "category": "Activewear",
+      "homepage": "https://shop.lululemon.com",
+      "window_days": 30,
+      "window_note": "Unworn, tags attached",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "expected",
+        "note": "Past seasons: November\u2013Dec 23 purchases returnable to about Jan 23."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "dillards",
+      "slug": "dillards",
+      "name": "Dillard's",
+      "nrf_rank": 73,
+      "category": "Department store",
+      "homepage": "https://www.dillards.com",
+      "window_days": 30,
+      "window_note": "In-store clearance 3 days",
+      "price_match": "none",
+      "price_match_note": "No price matching or adjustments.",
+      "holiday": {
+        "status": "none",
+        "note": "No published extension."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "signet",
+      "slug": "kay-zales-jared",
+      "name": "Kay, Zales & Jared",
+      "nrf_rank": 74,
+      "category": "Jewelry",
+      "homepage": "https://www.kay.com",
+      "window_days": 30,
+      "window_note": "Refund 30 days, exchange 60",
+      "price_match": "none",
+      "price_match_note": "No price matching.",
+      "holiday": {
+        "status": "expected",
+        "note": "Usually extends November\u2013December purchases to late January."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "staples",
+      "slug": "staples",
+      "name": "Staples",
+      "nrf_rank": 75,
+      "category": "Office supplies",
+      "homepage": "https://www.staples.com",
+      "window_days": 30,
+      "window_note": "Tech and furniture 14 days",
+      "price_match": "comp",
+      "price_match_note": "Matches retailers including Amazon; refunds the difference within 14 days.",
+      "holiday": {
+        "status": "expected",
+        "note": "Usually extends the 14-day tech window into mid-January."
+      },
+      "verified": "secondary",
+      "source": "",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "academy",
+      "slug": "academy-sports",
+      "name": "Academy Sports + Outdoors",
+      "nrf_rank": 76,
+      "category": "Sporting goods",
+      "homepage": "https://www.academy.com",
+      "window_days": 60,
+      "window_note": "Electronics 30",
+      "price_match": "comp",
+      "price_match_note": "Matches in-stock competitor prices; clearance and timed events excluded.",
+      "holiday": {
+        "status": "none",
+        "note": "No published extension."
+      },
+      "verified": "retailer",
+      "source": "https://www.academy.com/price-match-guarantee",
+      "updated": "2026-10-26"
+    }
+  ]
+}
