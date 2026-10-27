@@ -291,7 +291,7 @@ def home():
   <div class="field"><label for="sort">Sort by</label>
     <select id="sort"><option value="rank">Retailer size</option><option value="due">Latest return-by date</option><option value="window">Longest standard window</option><option value="az">A to Z</option></select></div>
 </div>
-<div class="count"><span><b id="n">{len(R)}</b> retailers</span><span id="when"></span></div>
+<div class="count"><span><b id="n">{len(R)}</b> retailers</span><span id="when">Return-by dates for a purchase on {CHECKED_TXT}</span></div>
 <div class="head" aria-hidden="true"><span>#</span><span>Retailer</span><span>Standard window</span><span>Price match</span><span>Holiday 2026</span><span>Return by</span><span></span></div>
 <div class="list" id="list">{rows}</div>
 
