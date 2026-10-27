@@ -21,7 +21,21 @@
       },
       "verified": "retailer",
       "source": "https://www.wbiw.com/2026/10/19/walmart-extends-holiday-return-window-as-updated-policy-takes-effect-nationwide/",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "electronics",
+          "label": "Electronics",
+          "days": 30,
+          "holiday": "same"
+        },
+        {
+          "key": "phones",
+          "label": "Wireless phones",
+          "days": 14,
+          "holiday": "excluded"
+        }
+      ]
     },
     {
       "id": "amazon",
@@ -43,7 +57,19 @@
       },
       "verified": "retailer",
       "source": "https://ppc.land/amazon-makes-its-january-31-holiday-return-deadline-an-annual-rule/",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "apple",
+          "label": "Apple products",
+          "days": 15,
+          "holiday": {
+            "start": "2026-11-01",
+            "end": "2026-12-31",
+            "by": "2027-01-15"
+          }
+        }
+      ]
     },
     {
       "id": "costco",
@@ -62,7 +88,15 @@
       },
       "verified": "retailer",
       "source": "https://manifestme.me/blog/return-policy-cheat-sheet",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "electronics",
+          "label": "TVs, computers, phones, major appliances",
+          "days": 90,
+          "holiday": "same"
+        }
+      ]
     },
     {
       "id": "samsclub",
@@ -81,7 +115,21 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "electronics",
+          "label": "Electronics & major appliances",
+          "days": 90,
+          "holiday": "same"
+        },
+        {
+          "key": "phones",
+          "label": "Cell phones",
+          "days": 14,
+          "holiday": "same"
+        }
+      ]
     },
     {
       "id": "homedepot",
@@ -100,7 +148,27 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "electronics",
+          "label": "Electronics",
+          "days": 30,
+          "holiday": "same"
+        },
+        {
+          "key": "appliances",
+          "label": "Major appliances",
+          "days": 2,
+          "holiday": "same"
+        },
+        {
+          "key": "card",
+          "label": "Paid with Home Depot card",
+          "days": 365,
+          "holiday": "same"
+        }
+      ]
     },
     {
       "id": "cvs",
@@ -119,7 +187,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "walgreens",
@@ -138,7 +207,8 @@
       },
       "verified": "secondary",
       "source": "https://shopsavvy.com/retailers/walgreens",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "target",
@@ -157,7 +227,33 @@
       },
       "verified": "retailer",
       "source": "https://manifestme.me/blog/return-policy-cheat-sheet",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "ownbrand",
+          "label": "Target-owned brands",
+          "days": 365,
+          "holiday": "same"
+        },
+        {
+          "key": "electronics",
+          "label": "Electronics",
+          "days": 30,
+          "holiday": "same"
+        },
+        {
+          "key": "apple",
+          "label": "Apple & Beats",
+          "days": 14,
+          "holiday": "same"
+        },
+        {
+          "key": "card",
+          "label": "Paid with Circle Card / Circle 360",
+          "days": 120,
+          "holiday": "same"
+        }
+      ]
     },
     {
       "id": "lowes",
@@ -176,7 +272,27 @@
       },
       "verified": "secondary",
       "source": "https://shopsavvy.com/retailers/lowes",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "electronics",
+          "label": "Electronics",
+          "days": 30,
+          "holiday": "same"
+        },
+        {
+          "key": "appliances",
+          "label": "Major appliances",
+          "days": 2,
+          "holiday": "same"
+        },
+        {
+          "key": "card",
+          "label": "Paid with Lowe's card",
+          "days": 365,
+          "holiday": "same"
+        }
+      ]
     },
     {
       "id": "apple",
@@ -195,7 +311,8 @@
       },
       "verified": "secondary",
       "source": "https://manifestme.me/blog/return-policy-cheat-sheet",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "tjx",
@@ -214,7 +331,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "dollargeneral",
@@ -233,7 +351,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "bestbuy",
@@ -252,7 +371,21 @@
       },
       "verified": "secondary",
       "source": "https://manifestme.me/blog/return-policy-cheat-sheet",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "member",
+          "label": "My Best Buy Plus or Total member",
+          "days": 60,
+          "holiday": "same"
+        },
+        {
+          "key": "phones",
+          "label": "Phones & activatable devices",
+          "days": 14,
+          "holiday": "excluded"
+        }
+      ]
     },
     {
       "id": "ace",
@@ -271,7 +404,8 @@
       },
       "verified": "retailer",
       "source": "https://www.acehardware.com/customer-service-center/returns",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "meijer",
@@ -290,7 +424,15 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "electronics",
+          "label": "Electronics",
+          "days": 30,
+          "holiday": "same"
+        }
+      ]
     },
     {
       "id": "ross",
@@ -309,7 +451,8 @@
       },
       "verified": "retailer",
       "source": "https://www.rossstores.com/?p=139",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "att",
@@ -328,7 +471,8 @@
       },
       "verified": "retailer",
       "source": "https://att.com/shop/en/wireless/returnpolicy.html",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "verizon",
@@ -347,7 +491,8 @@
       },
       "verified": "retailer",
       "source": "https://www.verizon.com/support/return-policy/",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "macys",
@@ -369,7 +514,8 @@
       },
       "verified": "retailer",
       "source": "https://www.macys.com/customer-service/articles/macys-holiday-2026-return-policy",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "bjs",
@@ -388,7 +534,21 @@
       },
       "verified": "retailer",
       "source": "https://www.bjs.com/help/what-is-bj-s-wholesale-club-return-policy-/",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "electronics",
+          "label": "TVs, computers, tablets",
+          "days": 90,
+          "holiday": "same"
+        },
+        {
+          "key": "mattress",
+          "label": "Mattresses",
+          "days": 30,
+          "holiday": "same"
+        }
+      ]
     },
     {
       "id": "dicks",
@@ -407,7 +567,15 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "fitness",
+          "label": "Fitness equipment",
+          "days": 30,
+          "holiday": "same"
+        }
+      ]
     },
     {
       "id": "dollartree",
@@ -426,7 +594,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "oreilly",
@@ -445,7 +614,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "autozone",
@@ -464,7 +634,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "tractorsupply",
@@ -483,7 +654,8 @@
       },
       "verified": "retailer",
       "source": "https://www.tractorsupply.com/policies-information_customer-solutions_tsc-return-policy.html",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "nordstrom",
@@ -502,7 +674,8 @@
       },
       "verified": "secondary",
       "source": "https://shopsavvy.com/retailers/nordstrom",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "kohls",
@@ -524,7 +697,37 @@
       },
       "verified": "retailer",
       "source": "https://www.kohls.com/faq/article/893",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "electronics",
+          "label": "Premium electronics & watches",
+          "days": 30,
+          "holiday": "same"
+        },
+        {
+          "key": "mattress",
+          "label": "Mattresses",
+          "days": 30,
+          "holiday": "same"
+        },
+        {
+          "key": "card",
+          "label": "Paid with Kohl's Card",
+          "days": 120,
+          "holiday": "same"
+        },
+        {
+          "key": "sephora",
+          "label": "Sephora at Kohl's",
+          "days": 30,
+          "holiday": {
+            "start": "2026-10-30",
+            "end": "2026-12-30",
+            "by": "2027-01-31"
+          }
+        }
+      ]
     },
     {
       "id": "menards",
@@ -543,7 +746,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "gap",
@@ -562,7 +766,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "chewy",
@@ -581,7 +786,8 @@
       },
       "verified": "retailer",
       "source": "https://www.chewy.com/app/content/return-policy",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "ulta",
@@ -600,7 +806,8 @@
       },
       "verified": "secondary",
       "source": "https://shopsavvy.com/retailers/ulta",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "familydollar",
@@ -619,7 +826,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "burlington",
@@ -638,7 +846,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "wayfair",
@@ -657,7 +866,15 @@
       },
       "verified": "secondary",
       "source": "https://manifestme.me/blog/return-policy-cheat-sheet",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "appliances",
+          "label": "Large appliances",
+          "days": 2,
+          "holiday": "same"
+        }
+      ]
     },
     {
       "id": "saks",
@@ -676,7 +893,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "sephora",
@@ -695,7 +913,8 @@
       },
       "verified": "retailer",
       "source": "https://www.sephora.com/ca/en/beauty/returns-exchanges",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "harborfreight",
@@ -714,7 +933,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "petsmart",
@@ -733,7 +953,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "basspro",
@@ -752,7 +973,15 @@
       },
       "verified": "retailer",
       "source": "https://help.basspro.com/returns-8ddb71e5/what-is-your-return-policy-aed39f03",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "electronics",
+          "label": "Electronics",
+          "days": 30,
+          "holiday": "same"
+        }
+      ]
     },
     {
       "id": "williamssonoma",
@@ -771,7 +1000,8 @@
       },
       "verified": "retailer",
       "source": "https://www.williams-sonoma.com/shop/cookware/staub-white",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "hobbylobby",
@@ -790,7 +1020,8 @@
       },
       "verified": "retailer",
       "source": "https://www.hobbylobby.com/returns",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "qvc",
@@ -809,7 +1040,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "bbw",
@@ -828,7 +1060,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "dell",
@@ -847,7 +1080,8 @@
       },
       "verified": "retailer",
       "source": "https://www.dell.com/en-us/lp/price-match-guarantee",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "jdsports",
@@ -866,7 +1100,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "lululemon",
@@ -885,7 +1120,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "dillards",
@@ -904,7 +1140,15 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "clearance",
+          "label": "In-store clearance",
+          "days": 3,
+          "holiday": "same"
+        }
+      ]
     },
     {
       "id": "signet",
@@ -923,7 +1167,8 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": []
     },
     {
       "id": "staples",
@@ -942,7 +1187,15 @@
       },
       "verified": "secondary",
       "source": "",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "electronics",
+          "label": "Tech & furniture",
+          "days": 14,
+          "holiday": "same"
+        }
+      ]
     },
     {
       "id": "academy",
@@ -961,7 +1214,15 @@
       },
       "verified": "retailer",
       "source": "https://www.academy.com/price-match-guarantee",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "categories": [
+        {
+          "key": "electronics",
+          "label": "Electronics",
+          "days": 30,
+          "holiday": "same"
+        }
+      ]
     }
   ]
 }

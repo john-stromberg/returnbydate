@@ -6,6 +6,10 @@ Static site built from JSON: a comparison tool on the homepage, one page per ret
 ## Files
 - `data/retailers.json` – every policy. When a retailer changes, edit its entry and set its `updated` date
   (that date feeds the page's "Updated" line, its structured data and the sitemap). `checked` is the site-wide date.
+- Each retailer's optional `categories` list holds shorter or longer windows (electronics, Apple, phones, store card…)
+  that power the "What did you buy?" picker. `holiday` per category is `"same"` (follows the retailer's holiday
+  extension), `"excluded"`, or its own `{start, end, by}`. Homepage picker keys: electronics, apple, phones,
+  appliances, mattress.
 - `data/affiliates.json` – paste each retailer's affiliate tracking link next to its id. Blank = plain homepage link.
 - `data/sources.json` – sources listed on the homepage.
 - `src/` – stylesheet, script and social preview image (`og.png`).

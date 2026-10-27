@@ -128,28 +128,47 @@ def fmt(dt):
     return dt.strftime("%b %-d, %Y")
 
 
-def due(r, bought):
-    if r["window_days"] is None:
+def due(r, bought, cat_key="most"):
+    cat = next((c for c in r.get("categories", []) if c["key"] == cat_key), None)
+    days = cat["days"] if cat else r["window_days"]
+    if days is None:
         return None, False
-    std = bought + datetime.timedelta(days=r["window_days"])
+    std = bought + datetime.timedelta(days=days)
     h = r["holiday"]
+    if cat and isinstance(cat.get("holiday"), dict):
+        h = dict(cat["holiday"], status="confirmed")
+    elif cat and cat.get("holiday") == "excluded":
+        h = {"status": "none"}
     if h["status"] == "confirmed" and d(h["start"]) <= bought <= d(h["end"]) and d(h["by"]) > std:
         return d(h["by"]), True
     return std, False
 
 
+def days_left(t, now):
+    if t is None:
+        return "", ""
+    n = (t - now).days
+    if n < 0:
+        return "Window passed", "d-past"
+    if n == 0:
+        return "Last day today", "d-crit"
+    return f'{n} day{"" if n == 1 else "s"} left', "d-crit" if n < 7 else "d-warn" if n < 14 else "d-ok"
+
+
 def row_html(r, bought):
     t, hol = due(r, bought)
+    lt, lc = days_left(t, bought)
     pm, hl = PMLBL[r["price_match"]], HOLLBL[r["holiday"]["status"]]
     return (f'<article class="row"><div class="rank">{e(r["nrf_rank"])}</div>'
             f'<div class="c-name"><div class="name"><a href="/returns/{r["slug"]}/">{e(r["name"])}</a></div>'
             f'<div class="cat">{e(r["category"])}</div><div class="src">'
             f'{"Checked on retailer page" if r["verified"]=="retailer" else "Secondary sources, confirm"}</div></div>'
-            f'<div><span class="lbl">Standard window</span><div class="big">{e(window_short(r))}</div><div class="note">{e(r["window_note"])}</div></div>'
-            f'<div><span class="lbl">Price match</span><span class="pill {pm[1]}">{pm[0]}</span><div class="note">{e(r["price_match_note"])}</div></div>'
+            f'<div class="c-win"><span class="lbl">Standard window</span><div class="big">{e(window_short(r))}</div><div class="note">{e(r["window_note"])}</div></div>'
+            f'<div class="c-pm"><span class="lbl">Price match</span><span class="pill {pm[1]}">{pm[0]}</span><div class="note">{e(r["price_match_note"])}</div></div>'
             f'<div class="c-hol"><span class="lbl">Holiday 2026</span><span class="stamp {hl[1]}">{hl[0]}</span><div class="note">{e(r["holiday"]["note"])}</div></div>'
-            f'<div><span class="lbl">Return by</span><div class="due{" hol" if hol else ""}">{fmt(t) if t else "No set limit"}</div>'
-            f'<div class="note">{"Holiday extension" if hol else "Standard window" if t else "Most items"}</div></div>'
+            f'<div class="c-due"><span class="lbl">Return by</span><div class="due">{fmt(t) if t else "No set limit"}</div>'
+            + (f'<span class="dleft {lc}">{lt}</span>' if lt else "")
+            + f'<div class="note{" hol" if hol else ""}">{"Holiday extension" if hol else "Standard window" if t else "Most items"}</div></div>'
             f'<div class="c-shop"><a class="shop" href="{e(shop(r))}" target="_blank" rel="sponsored noopener">Shop {e(short_name(r))} ↗</a></div></article>')
 
 
@@ -228,6 +247,14 @@ def retailer_page(r):
                 if r["verified"] == "retailer"
                 else "Compiled from consumer-press and coupon-site summaries. Confirm with the retailer.")
     hol_detail = holiday_sentence(r) if h["status"] != "none" else h["note"]
+    cats = r.get("categories", [])
+    cat_field = ""
+    if cats:
+        opts = "".join(f'<option value="{e(c["key"])}">{e(c["label"])} ({c["days"]} days)</option>' for c in cats)
+        cat_field = (f'<div class="field"><label for="calc-cat">What did you buy?</label><select id="calc-cat">'
+                     f'<option value="most">Most items ({e(window_short(r))})</option>{opts}</select></div>')
+    st, _ = due(r, CHECKED)
+    static_due = fmt(st) if st else "No set limit"
     src_link = (f' <a href="{e(r["source"])}" rel="noopener" target="_blank">See source</a>' if r.get("source") else "")
     body = f"""
 <div class="crumbs"><a href="/">All retailers</a> / {e(n)}</div>
@@ -236,10 +263,22 @@ def retailer_page(r):
 <p class="lede">{e(lede)}</p>
 
 <section class="calc" aria-labelledby="calc-h">
-  <div class="field"><label for="calc-date" id="calc-h">I bought it on</label>
-    <input id="calc-date" type="date" data-id="{e(r['id'])}"></div>
+  <div class="calc-in">
+    <div class="field"><label for="calc-date" id="calc-h">I bought it on</label>
+      <input id="calc-date" type="date" data-id="{e(r['id'])}"></div>
+    {cat_field}
+    <div class="field"><label for="calc-item">Item (optional, for your reminder)</label>
+      <input id="calc-item" type="text" maxlength="60" placeholder="e.g. AirPods" autocomplete="off"></div>
+  </div>
   <div class="answer" aria-live="polite"><span class="k">Return to {e(short_name(r))} by</span>
-    <span class="v" id="calc-v">{e(window_short(r))}</span><span class="why" id="calc-why"></span></div>
+    <span class="v" id="calc-v">{e(static_due)}</span>
+    <span class="dleft" id="calc-left" hidden></span>
+    <span class="why" id="calc-why"></span>
+    <div class="cal" id="cal" hidden><span class="k">Add a reminder</span>
+      <a class="btn" id="cal-g" href="#" target="_blank" rel="noopener">Google Calendar</a>
+      <button class="btn" id="cal-ics" type="button">Apple / Outlook (.ics)</button>
+      <span class="why">The .ics file includes an alert 3 days before.</span></div>
+  </div>
 </section>
 
 <h2>The policy at a glance</h2>
@@ -281,9 +320,12 @@ def home():
 <p class="lede">Return windows, price-match rules and holiday return extensions at 50 of the biggest US retailers. Pick the day you bought something and every row shows your return-by date. {len(confirmed)} retailers have posted 2026 holiday dates so far.</p>
 <p class="disclose">Some links are affiliate links. If you buy through them we may earn a commission at no extra cost to you.</p>
 
-<div class="rail" role="search">
-  <div class="field"><label for="q">Search retailers</label><input id="q" type="search" placeholder="Try “Target”, “electronics”, “Amazon”"></div>
+<div class="rail" id="rail" role="search">
+  <div class="field f-q"><label for="q">Search retailers</label><input id="q" type="search" placeholder="Try “Target”, “electronics”, “Amazon”"></div>
+  <button class="btn f-tog" id="filters-toggle" type="button" aria-expanded="false" aria-controls="rail">Filters</button>
   <div class="field"><label for="d">Bought on</label><input id="d" type="date"></div>
+  <div class="field"><label for="cat">What did you buy?</label>
+    <select id="cat"><option value="most">Most items</option><option value="electronics">Electronics</option><option value="apple">Apple products</option><option value="phones">Phones</option><option value="appliances">Major appliances</option><option value="mattress">Mattresses</option></select></div>
   <div class="field"><label for="pm">Price match</label>
     <select id="pm"><option value="">Any</option><option value="comp">Matches competitors</option><option value="own">Own prices only</option><option value="none">No price match</option></select></div>
   <div class="field"><label for="hol">Holiday extension</label>
@@ -291,7 +333,7 @@ def home():
   <div class="field"><label for="sort">Sort by</label>
     <select id="sort"><option value="rank">Retailer size</option><option value="due">Latest return-by date</option><option value="window">Longest standard window</option><option value="az">A to Z</option></select></div>
 </div>
-<div class="count"><span><b id="n">{len(R)}</b> retailers</span><span id="when">Return-by dates for a purchase on {CHECKED_TXT}</span></div>
+<div class="count"><span><b id="n">{len(R)}</b> retailers</span><span id="when">Return-by dates for most items bought {CHECKED_TXT}</span></div>
 <div class="head" aria-hidden="true"><span>#</span><span>Retailer</span><span>Standard window</span><span>Price match</span><span>Holiday 2026</span><span>Return by</span><span></span></div>
 <div class="list" id="list">{rows}</div>
 
