@@ -1,0 +1,44 @@
+# Scheduled Claude runs may only be allowed to push to claude/* branches.
+# This merges such a branch into main (which Cloudflare deploys), but ONLY when
+# the branch changes nothing outside data/ and the site still builds.
+name: Merge data updates to main
+
+on:
+  push:
+    branches: ["claude/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: merge-to-main
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Allow data-only changes
+        run: |
+          git fetch origin "$GITHUB_REF_NAME"
+          changed="$(git diff --name-only origin/main...FETCH_HEAD)"
+          echo "Changed files:"; echo "$changed"
+          if [ -z "$changed" ]; then echo "Nothing to merge."; exit 0; fi
+          if echo "$changed" | grep -vqE '^data/'; then
+            echo "::error::This branch changes files outside data/. Not merging automatically."
+            exit 1
+          fi
+
+      - name: Merge, build, push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git merge --no-edit FETCH_HEAD
+          python3 build.py
+          git push origin main
+          git push origin --delete "$GITHUB_REF_NAME"
