@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-26",
+  "checked": "2026-11-08",
   "retailers": [
     {
       "id": "walmart",
@@ -17,7 +17,7 @@
         "start": "2026-10-01",
         "end": "2026-12-31",
         "by": "2027-01-31",
-        "note": "Bought Oct 1\u2013Dec 31, 2026 \u2192 return by Jan 31, 2027. Phones, major appliances and protection plans excluded."
+        "note": "Bought Oct 1–Dec 31, 2026 → return by Jan 31, 2027. Phones, major appliances and protection plans excluded."
       },
       "verified": "retailer",
       "source": "https://www.wbiw.com/2026/10/19/walmart-extends-holiday-return-window-as-updated-policy-takes-effect-nationwide/",
@@ -53,7 +53,7 @@
         "start": "2026-11-01",
         "end": "2026-12-31",
         "by": "2027-01-31",
-        "note": "Bought Nov 1\u2013Dec 31, 2026 \u2192 return by Jan 31, 2027 (Apple: Jan 15, 2027). Amazon says this now repeats every year."
+        "note": "Bought Nov 1–Dec 31, 2026 → return by Jan 31, 2027 (Apple: Jan 15, 2027). Amazon says this now repeats every year."
       },
       "verified": "retailer",
       "source": "https://ppc.land/amazon-makes-its-january-31-holiday-return-deadline-an-annual-rule/",
@@ -223,7 +223,7 @@
       "price_match_note": "Matches Target.com, store and Circle deal prices within 14 days. Competitor matching ended July 2025.",
       "holiday": {
         "status": "expected",
-        "note": "Last season: electronics bought Nov 1\u2013Dec 24 returnable to Jan 24; Apple, Beats and phones to about Jan 8. 2026 dates not posted yet."
+        "note": "Last season: electronics bought Nov 1–Dec 24 returnable to Jan 24; Apple, Beats and phones to about Jan 8. 2026 dates not posted yet."
       },
       "verified": "retailer",
       "source": "https://manifestme.me/blog/return-policy-cheat-sheet",
@@ -306,12 +306,15 @@
       "price_match": "none",
       "price_match_note": "No price matching.",
       "holiday": {
-        "status": "expected",
-        "note": "Last season: received Nov 12\u2013Dec 25 \u2192 return by Jan 8. Usually announced mid-November."
+        "status": "confirmed",
+        "start": "2026-11-06",
+        "end": "2026-12-25",
+        "by": "2027-01-08",
+        "note": "Received Nov 6–Dec 25, 2026 → return by Jan 8, 2027. Carrier-financed iPhones/iPads, gift cards and installed software excluded."
       },
       "verified": "secondary",
-      "source": "https://manifestme.me/blog/return-policy-cheat-sheet",
-      "updated": "2026-10-26",
+      "source": "https://macrumors.com/2026/11/06/apple-holiday-return-policy-2026/",
+      "updated": "2026-11-08",
       "categories": []
     },
     {
@@ -327,7 +330,7 @@
       "price_match_note": "No price matching.",
       "holiday": {
         "status": "expected",
-        "note": "Last season: in-store purchases Oct 5\u2013Dec 24 returnable to Jan 25; online to Feb 4."
+        "note": "Last season: in-store purchases Oct 5–Dec 24 returnable to Jan 25; online to Feb 4."
       },
       "verified": "secondary",
       "source": "",
@@ -366,12 +369,15 @@
       "price_match": "comp",
       "price_match_note": "Matches qualified competitors on identical new items, plus its own price drops during the return window.",
       "holiday": {
-        "status": "expected",
-        "note": "Reported for 2026: bought Oct 31\u2013Dec 31 \u2192 return by Jan 15, 2027, with a matching Holiday Price Match Guarantee. Not yet on bestbuy.com."
+        "status": "confirmed",
+        "start": "2026-10-30",
+        "end": "2026-12-31",
+        "by": "2027-01-15",
+        "note": "Bought Oct 30–Dec 31, 2026 → return by Jan 15, 2027. Activatable devices (phones, cellular tablets/hotspots/wearables) and AppleCare+ plans excluded."
       },
-      "verified": "secondary",
-      "source": "https://manifestme.me/blog/return-policy-cheat-sheet",
-      "updated": "2026-10-26",
+      "verified": "retailer",
+      "source": "https://www.bestbuy.com/site/help-topics/best-buy-holiday-faqs/pcmcat748300621076.c?id=pcmcat748300621076",
+      "updated": "2026-11-08",
       "categories": [
         {
           "key": "member",
@@ -510,7 +516,7 @@
         "start": "2026-10-05",
         "end": "2026-12-31",
         "by": "2027-01-31",
-        "note": "Bought Oct 5\u2013Dec 31, 2026 \u2192 return by Jan 31, 2027. Dyson and Mac Duggal excluded."
+        "note": "Bought Oct 5–Dec 31, 2026 → return by Jan 31, 2027. Dyson and Mac Duggal excluded."
       },
       "verified": "retailer",
       "source": "https://www.macys.com/customer-service/articles/macys-holiday-2026-return-policy",
@@ -693,7 +699,7 @@
         "start": "2026-10-04",
         "end": "2026-12-30",
         "by": "2027-01-31",
-        "note": "Bought Oct 4\u2013Dec 30, 2026 \u2192 return by Jan 31, 2027. Sephora at Kohl's: Oct 30\u2013Dec 30."
+        "note": "Bought Oct 4–Dec 30, 2026 → return by Jan 31, 2027. Sephora at Kohl's: Oct 30–Dec 30."
       },
       "verified": "retailer",
       "source": "https://www.kohls.com/faq/article/893",
@@ -797,7 +803,7 @@
       "category": "Beauty",
       "homepage": "https://www.ulta.com",
       "window_days": 60,
-      "window_note": "Refund within 30 days, store credit days 31\u201360",
+      "window_note": "Refund within 30 days, store credit days 31–60",
       "price_match": "none",
       "price_match_note": "No price matching.",
       "holiday": {
@@ -837,7 +843,7 @@
       "category": "Off-price",
       "homepage": "https://www.burlington.com",
       "window_days": 30,
-      "window_note": "Store credit days 31\u201360",
+      "window_note": "Store credit days 31–60",
       "price_match": "none",
       "price_match_note": "No price matching.",
       "holiday": {
@@ -889,7 +895,7 @@
       "price_match_note": "No price matching.",
       "holiday": {
         "status": "expected",
-        "note": "Last season: bought Nov 15\u2013Dec 15 \u2192 return by Jan 15."
+        "note": "Last season: bought Nov 15–Dec 15 → return by Jan 15."
       },
       "verified": "secondary",
       "source": "",
@@ -904,12 +910,12 @@
       "category": "Beauty",
       "homepage": "https://www.sephora.com",
       "window_days": 30,
-      "window_note": "Store credit days 31\u201360",
+      "window_note": "Store credit days 31–60",
       "price_match": "none",
       "price_match_note": "No price matching.",
       "holiday": {
         "status": "expected",
-        "note": "Last season: bought Oct 31\u2013Dec 30 \u2192 exchange or credit through Jan 30."
+        "note": "Last season: bought Oct 31–Dec 30 → exchange or credit through Jan 30."
       },
       "verified": "retailer",
       "source": "https://www.sephora.com/ca/en/beauty/returns-exchanges",
@@ -1076,7 +1082,7 @@
       "price_match_note": "Matches qualifying retailer sites within 30 days (PCs capped at 10%), plus its own price drops.",
       "holiday": {
         "status": "expected",
-        "note": "Usually extends returns and price guarantees for November\u2013December buys into mid-January."
+        "note": "Usually extends returns and price guarantees for November–December buys into mid-January."
       },
       "verified": "retailer",
       "source": "https://www.dell.com/en-us/lp/price-match-guarantee",
@@ -1116,7 +1122,7 @@
       "price_match_note": "No price matching.",
       "holiday": {
         "status": "expected",
-        "note": "Past seasons: November\u2013Dec 23 purchases returnable to about Jan 23."
+        "note": "Past seasons: November–Dec 23 purchases returnable to about Jan 23."
       },
       "verified": "secondary",
       "source": "",
@@ -1163,7 +1169,7 @@
       "price_match_note": "No price matching.",
       "holiday": {
         "status": "expected",
-        "note": "Usually extends November\u2013December purchases to late January."
+        "note": "Usually extends November–December purchases to late January."
       },
       "verified": "secondary",
       "source": "",
