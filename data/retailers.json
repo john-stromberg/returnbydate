@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-08",
+  "checked": "2026-11-10",
   "retailers": [
     {
       "id": "walmart",
@@ -222,12 +222,15 @@
       "price_match": "own",
       "price_match_note": "Matches Target.com, store and Circle deal prices within 14 days. Competitor matching ended July 2025.",
       "holiday": {
-        "status": "expected",
-        "note": "Last season: electronics bought Nov 1–Dec 24 returnable to Jan 24; Apple, Beats and phones to about Jan 8. 2026 dates not posted yet."
+        "status": "confirmed",
+        "start": "2026-11-01",
+        "end": "2026-12-24",
+        "by": "2027-01-24",
+        "note": "Bought Nov 1–Dec 24, 2026 → return by Jan 24, 2027. Covers electronics, entertainment and most Target Plus items (not seasonal holiday décor); Apple, Beats and unlocked/prepaid phones due Jan 8, 2027. Other items keep the standard 90-day window."
       },
       "verified": "retailer",
-      "source": "https://manifestme.me/blog/return-policy-cheat-sheet",
-      "updated": "2026-10-26",
+      "source": "https://corporate.target.com/press/fact-sheet/2026/11/holiday-shopping-information",
+      "updated": "2026-11-10",
       "categories": [
         {
           "key": "ownbrand",
@@ -245,7 +248,11 @@
           "key": "apple",
           "label": "Apple & Beats",
           "days": 14,
-          "holiday": "same"
+          "holiday": {
+            "start": "2026-11-01",
+            "end": "2026-12-24",
+            "by": "2027-01-08"
+          }
         },
         {
           "key": "card",
