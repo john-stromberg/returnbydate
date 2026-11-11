@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "retailers": [
     {
       "id": "walmart",
@@ -336,12 +336,15 @@
       "price_match": "none",
       "price_match_note": "No price matching.",
       "holiday": {
-        "status": "expected",
-        "note": "Last season: in-store purchases Oct 5–Dec 24 returnable to Jan 25; online to Feb 4."
+        "status": "confirmed",
+        "start": "2026-10-04",
+        "end": "2026-12-24",
+        "by": "2027-01-25",
+        "note": "Bought Oct 4–Dec 24, 2026 → return by Jan 25, 2027. In-store purchases at T.J. Maxx and Marshalls; online orders are due Feb 4, 2027. HomeGoods has not yet posted its 2026 dates (last season it matched)."
       },
-      "verified": "secondary",
-      "source": "",
-      "updated": "2026-10-26",
+      "verified": "retailer",
+      "source": "https://tjmaxx.tjx.com/store/jump/topic/FAQs/23900001p",
+      "updated": "2026-11-11",
       "categories": []
     },
     {
@@ -814,12 +817,15 @@
       "price_match": "none",
       "price_match_note": "No price matching.",
       "holiday": {
-        "status": "expected",
-        "note": "Last season holiday purchases were returnable through Jan 31."
+        "status": "confirmed",
+        "start": "2026-11-01",
+        "end": "2026-12-31",
+        "by": "2027-01-31",
+        "note": "Bought Nov 1–Dec 31, 2026 → return by Jan 31, 2027. Eligible products bought in Ulta Beauty stores or on Ulta.com, refunded to the original payment method; proof of purchase required."
       },
-      "verified": "secondary",
-      "source": "https://shopsavvy.com/retailers/ulta",
-      "updated": "2026-10-26",
+      "verified": "retailer",
+      "source": "https://www.ulta.com/guestservices/all",
+      "updated": "2026-11-11",
       "categories": []
     },
     {
@@ -921,12 +927,15 @@
       "price_match": "none",
       "price_match_note": "No price matching.",
       "holiday": {
-        "status": "expected",
-        "note": "Last season: bought Oct 31–Dec 30 → exchange or credit through Jan 30."
+        "status": "confirmed",
+        "start": "2026-10-30",
+        "end": "2026-12-31",
+        "by": "2027-01-31",
+        "note": "Bought Oct 30–Dec 31, 2026 → return by Jan 31, 2027. After the first 30 days the return is an exchange or merchandise/online credit, not a refund. Sephora at Kohl's purchases excluded."
       },
       "verified": "retailer",
-      "source": "https://www.sephora.com/ca/en/beauty/returns-exchanges",
-      "updated": "2026-10-26",
+      "source": "https://www.sephora.com/beauty/returns-exchanges/",
+      "updated": "2026-11-11",
       "categories": []
     },
     {
@@ -1048,12 +1057,15 @@
       "price_match": "none",
       "price_match_note": "No price matching.",
       "holiday": {
-        "status": "expected",
-        "note": "Usually runs a holiday return period starting in the fall. 2026 dates not posted."
+        "status": "confirmed",
+        "start": "2026-09-21",
+        "end": "2026-12-24",
+        "by": "2027-01-31",
+        "note": "Bought Sep 21–Dec 24, 2026 → return by Jan 31, 2027. Refund is minus shipping & handling and the Q Return Label fee. Personalized items, food and beverages, gift cards, charitable donations and Final Sale Price items excluded."
       },
-      "verified": "secondary",
-      "source": "",
-      "updated": "2026-10-26",
+      "verified": "retailer",
+      "source": "https://egain.qvc.com/system/templates/selfservice/qvc_km/help/customer/locale/en-US/portal/250700000001015/content/PROD-23092",
+      "updated": "2026-11-11",
       "categories": []
     },
     {
@@ -1088,12 +1100,15 @@
       "price_match": "comp",
       "price_match_note": "Matches qualifying retailer sites within 30 days (PCs capped at 10%), plus its own price drops.",
       "holiday": {
-        "status": "expected",
-        "note": "Usually extends returns and price guarantees for November–December buys into mid-January."
+        "status": "confirmed",
+        "start": "2026-11-01",
+        "end": "2026-12-29",
+        "by": "2027-01-15",
+        "note": "Bought Nov 1–Dec 29, 2026 → return by Jan 15, 2027. Or 30 days from the invoice date if later. Dell.com purchases; commercial purchase-order customers and products that are never returnable excluded."
       },
       "verified": "retailer",
-      "source": "https://www.dell.com/en-us/lp/price-match-guarantee",
-      "updated": "2026-10-26",
+      "source": "https://www.dell.com/en-us/shop/lp/return-policy",
+      "updated": "2026-11-11",
       "categories": []
     },
     {
@@ -1175,12 +1190,15 @@
       "price_match": "none",
       "price_match_note": "No price matching.",
       "holiday": {
-        "status": "expected",
-        "note": "Usually extends November–December purchases to late January."
+        "status": "confirmed",
+        "start": "2026-10-20",
+        "end": "2026-12-24",
+        "by": "2027-01-24",
+        "note": "Bought Oct 20–Dec 24, 2026 → return by Jan 24, 2027. Special-order watches, custom designs, engraved jewelry, gift cards and Progressive Leasing purchases excluded."
       },
-      "verified": "secondary",
-      "source": "",
-      "updated": "2026-10-26",
+      "verified": "retailer",
+      "source": "https://www.kay.com/kay-returns-exchanges",
+      "updated": "2026-11-11",
       "categories": []
     },
     {
