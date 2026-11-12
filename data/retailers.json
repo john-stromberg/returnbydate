@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-11",
+  "checked": "2026-11-12",
   "retailers": [
     {
       "id": "walmart",
@@ -777,12 +777,15 @@
       "price_match": "own",
       "price_match_note": "One-time adjustment if its own price drops within 14 days.",
       "holiday": {
-        "status": "expected",
-        "note": "Past seasons: mid-October to Dec 24 purchases returnable to mid-January."
+        "status": "confirmed",
+        "start": "2026-10-15",
+        "end": "2026-12-24",
+        "by": "2027-01-15",
+        "note": "Bought Oct 15–Dec 24, 2026 → return by Jan 15, 2027. Or 30 days from purchase/delivery if later. Standing yearly rule on Gap's and Gap Factory's return FAQs; Old Navy and Banana Republic pages not separately confirmed, so check your receipt. Third-party marketplace items excluded; proof of purchase required; return to the same brand."
       },
-      "verified": "secondary",
-      "source": "",
-      "updated": "2026-10-26",
+      "verified": "retailer",
+      "source": "https://www.gap.com/customer-service/return-policy-faq?cid=1192370",
+      "updated": "2026-11-12",
       "categories": []
     },
     {
