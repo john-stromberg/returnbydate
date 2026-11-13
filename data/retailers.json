@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-12",
+  "checked": "2026-11-13",
   "retailers": [
     {
       "id": "walmart",
@@ -1216,12 +1216,15 @@
       "price_match": "comp",
       "price_match_note": "Matches retailers including Amazon; refunds the difference within 14 days.",
       "holiday": {
-        "status": "expected",
-        "note": "Usually extends the 14-day tech window into mid-January."
+        "status": "confirmed",
+        "start": "2026-11-15",
+        "end": "2026-12-24",
+        "by": "2027-01-09",
+        "note": "Bought Nov 15–Dec 24, 2026 → return by Jan 9, 2027. Applies to electronics and furniture (normally 14 days), or regular policy if later; gift-receipt returns get store credit."
       },
       "verified": "secondary",
-      "source": "",
-      "updated": "2026-10-26",
+      "source": "https://www.financialcontent.com/article/bizwire-2026-11-2-staples-holiday-deals-start-now-with-weekly-dash-deals-black-friday-and-cyber-week-deals-up-to-50-off",
+      "updated": "2026-11-13",
       "categories": [
         {
           "key": "electronics",
